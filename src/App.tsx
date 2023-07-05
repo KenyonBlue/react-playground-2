@@ -1,12 +1,17 @@
+/* tslint:disable */
 // axios call
 // higher order function 
 // interface
 // rendering a list
 // updating a list
 //click events
-// custom hook
+// custom hook create a custom hook anytime i have a state and use effect together and setting that state
 
 // TODO: implememnt render props
+// implement useMemo use callback
+// you want to useMemo when operation is expensive or returning array or object
+// useCallback when retain ref identity of those callbacks
+// understand pub sub model
 
 import React, { ReactElement, useEffect, useState } from 'react';
 import './styles.css'
@@ -26,7 +31,12 @@ userId: number,
 color?: string,
 }
 
+
+
+
 export const FirstComponent = (props: any) => {
+
+
 
   return (
    <> 

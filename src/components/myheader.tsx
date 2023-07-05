@@ -1,12 +1,18 @@
 import './myheaderstyles.css'
+import { useSelector } from 'react-redux';
+
 function MyHeader() {
-    const styles = {
-        container: {
-            display: 'flex',
-            qwidth: '100%',
-            border: '1px solid green'
-        }
-    }
+    const {name} = useSelector((state: any) => state.person)
+
+    // const styles = {
+    //     container: {
+    //         display: 'flex',
+    //         qwidth: '100%',
+    //         border: '1px solid green'
+    //     }
+    // }
+
+    console.log({name})
 
     return (
         <>
